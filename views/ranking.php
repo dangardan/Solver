@@ -13,13 +13,13 @@
 
     <div class = "SolverTable">
     <h1>Ranking</h1>
-    <table>
+    <table id="rankingtable">
         <tr>
             <th>Rank</th>
             <th>Name</th>
             <th>Experience</th>
         </tr>
-        <tr>
+        <!-- <tr>
             <td></td>
             <td></td>
             <td></td>
@@ -38,7 +38,7 @@
             <td></td>
             <td></td>
             <td></td>
-        </tr>
+        </tr> -->
     </table>
 </div>
 

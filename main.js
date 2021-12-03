@@ -114,3 +114,11 @@ $(document).ready(() => {
 
 
 });
+
+
+$(window).on('load', function() {
+
+    $('#rankingtable').load("../php/load-ranking.php");
+
+
+});
