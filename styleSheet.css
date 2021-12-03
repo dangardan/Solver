@@ -1,44 +1,35 @@
 /* James Faber, Hector Castellanos, Daniel Garcia */
 
-
-
-
-body
-{
+body {
     background-color: aliceblue;
     padding: 0px;
     margin: 0px;
     animation: transitionIn 2s;
 }
 
-@keyframes transitionIn
-{
-    from
-    {
+@keyframes transitionIn {
+    from {
         opacity: 0;
         transform: rotateX(-10deg);
     }
-
-    to 
-    {
+    to {
         opacity: 1;
         transform: rotate(0);
     }
-
 }
+
+
 /* Login  and sign up Page Designs */
 
-.LoginInfo
-{
-    background-image: url(./images/MathBackgroundTwo.jpeg);   
+.LoginInfo {
+    background-image: url(./images/MathBackgroundTwo.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
-.loginPage
-{
+.loginPage {
     background-color: rgb(255, 181, 181);
     margin: auto;
     width: 300px;
@@ -50,41 +41,34 @@ body
     box-shadow: 5px 5px 10px rgb(92, 90, 90);
 }
 
-#textbox
-{
+.textbox {
     border-radius: 30px;
     width: 200px;
     height: 40px;
     text-align: center;
     margin-top: 20px;
-
 }
 
-
-#loginButton
-{
+#loginButton {
     border-radius: 30px;
     width: 200px;
     height: 40px;
     background-color: rgb(149, 241, 248);
     margin-top: 20px;
-
 }
 
-#SignupButton
-{
+#SignupButton {
     border-radius: 30px;
     width: 200px;
     height: 40px;
     background-color: rgb(253, 255, 136);
     margin-top: 20px;
-
 }
+
 
 /* Welcome Page for Solver */
 
-.LevelBar
-{
+.LevelBar {
     background-color: rgba(200, 200, 206, 0.452);
     width: 200px;
     border: solid;
@@ -93,34 +77,28 @@ body
     box-shadow: 5px 5px 10px rgb(92, 90, 90);
     margin-left: 10px;
     margin-top: 10px;
-
-    
 }
 
-.userPic
-{
+.userPic {
     float: left;
     margin-top: 20px;
-    margin-right:20px;
+    margin-right: 20px;
     text-align: center;
 }
 
-.userPic img
-{
+.userPic img {
     border-radius: 100%;
 }
 
-.WelcomeInfo
-{
-    background-image: url(./images/MathBackgroundThree.jpeg);   
+.WelcomeInfo {
+    background-image: url(./images/MathBackgroundThree.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: 120% 120%;
 }
 
-.WelcomePage
-{
+.WelcomePage {
     margin: auto;
     width: 300px;
     height: 350px;
@@ -129,8 +107,7 @@ body
     border-radius: 30px;
 }
 
-#chatBox
-{
+#chatBox {
     /* float: right; */
     padding: 0px;
     margin: 0px;
@@ -143,9 +120,10 @@ body
     top: 300px;
 }
 
+
 /* Ranking PAge and History page */
-.SolverTable
-{
+
+.SolverTable {
     margin: auto;
     margin-top: -50;
     width: 500px;
@@ -153,86 +131,77 @@ body
     text-align: center;
 }
 
-.SolverTable table
-{
+.SolverTable table {
     width: 400px;
     margin: auto;
     border: solid;
 }
 
-.SolverTable table th
-{
+.SolverTable table th {
     text-align: left;
 }
 
-.SolverTable table, th, td
-{
+.SolverTable table,
+th,
+td {
     border: 1px solid black;
-    border-collapse: collapse ;
+    border-collapse: collapse;
 }
 
-.SolverTable th, td
-{
+.SolverTable th,
+td {
     padding: 10px;
 }
 
-.SolverTable tr:nth-child(odd)
-{
+.SolverTable tr:nth-child(odd) {
     background-color: cadetblue;
 }
 
 
-
 /* Select Topic Page */
 
-.card
-{
+.card {
     background-color: antiquewhite;
     width: 250px;
     margin: auto;
-    float: left; 
+    float: left;
     margin: 20px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
     box-shadow: 5px 5px 5px gray;
     border-radius: 25px;
     border: 1px solid black;
-
-     /* display: grid; 
+    /* display: grid; 
      grid-template-columns: 20% 20% 20% 20%; */
 }
 
-.card img
-{
+.card img {
     border-radius: 25px;
+}
 
+.cardInfo {
+    text-align: center;
 }
-.cardInfo
-{
-     text-align: center; 
-}
+
 
 /* ---------------Quiz Page------------------- */
 
-.Quiztime
-{
+.Quiztime {
     background-color: honeydew;
     width: fit-content;
-   float: right;
-   margin: 0%;
-   padding: 0%;
+    float: right;
+    margin: 0%;
+    padding: 0%;
 }
 
-.QuizBackground
-{
+.QuizBackground {
     background-color: rgba(194, 192, 192, 0.767);
     padding: 10px;
     margin: 10px;
-    width:500px;
+    width: 500px;
     margin: auto;
 }
 
-.QuizQuestions
-{
+.QuizQuestions {
     background-color: honeydew;
     padding: px;
     margin: 30px 0 20px 0;
@@ -240,22 +209,18 @@ body
     text-align: center;
 }
 
-.QuizQuestions button
-{
+.QuizQuestions button {
     margin: 10px;
     border-radius: 25px;
     width: 70px;
 }
 
-
-.QuizQuestions h3
-{
+.QuizQuestions h3 {
     background-color: rgb(190, 190, 190);
     width: fit-content;
 }
 
-#finishButton
-{
+#finishButton {
     width: 450px;
     border-radius: 50px;
     height: 50px;
