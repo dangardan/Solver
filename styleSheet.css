@@ -227,3 +227,39 @@ td {
     margin-left: 25px;
     background-color: rgb(17, 175, 51);
 }
+
+.resultQuestions {
+    border: 1px solid black;
+    width: 900px;
+    margin: 20px auto;
+    background-color: honeydew;
+    padding: 0 0 10px 20px;
+}
+
+.resultQuestions button {
+    border-radius: 25px;
+    width: 70px;
+}
+
+.wrong {
+    border: 3px Solid red;
+}
+
+.correct {
+    border: 5px Solid rgb(45, 245, 45);
+}
+
+
+/* .resultExplanation
+{
+    
+}
+
+.resultLink
+{
+}
+
+.resultGrid
+{
+   
+} */

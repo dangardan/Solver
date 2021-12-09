@@ -22,62 +22,7 @@
             <th>REVIEW</th>
 
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <Td></Td>
-            <Td></Td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <Td></Td>
-            <Td></Td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <Td></Td>
-            <Td></Td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <Td></Td>
-            <Td></Td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <Td></Td>
-            <Td></Td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <Td></Td>
-            <Td></Td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <Td></Td>
-            <Td></Td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <Td></Td>
-            <Td></Td>
-        </tr>
+        <?php include '../php/history-load.php'; ?>
     </table>
 </div>
 

@@ -111,14 +111,37 @@ $(document).ready(() => {
     $("#logoutbutton").on('click', function(e) {
         window.location.href = "../php/logout.php";
     });
-
+    $("#finishButton").on('click', function(e) {
+        e.preventDefault();
+        var mc = document.querySelector('input[name="mc"]:checked').value;
+        var tf = document.querySelector('input[name="trfl"]:checked').value;
+        var fill = document.querySelector('input[name="fill"]').value;
+        console.log(mc + ' ' + tf + ' ' + fill)
+        $.ajax({
+            url: "../php/quiz-submit.php",
+            type: "POST",
+            data: {
+                mchoice: mc,
+                tfchoice: tf,
+                blank: fill
+            },
+            success: function(result) {
+                console.log(result)
+                var result = JSON.parse(result);
+                if (result.status == 100) {
+                    window.location.href = "../views/results.php"
+                } else if (result.status == 101) {
+                    alert(result.message);
+                }
+            }
+        });
+    });
 
 });
 
 
 $(window).on('load', function() {
 
-    $('#rankingtable').load("../php/load-ranking.php");
-
+    $("#rankingtable").load("../php/load-ranking.php");
 
 });

@@ -17,7 +17,7 @@
     </div>
 
     <Div class = "card">
-        <a href="Choose Quiz.html">
+        <a href="Choose Quiz.php">
         <img src="../images/geometry.jpg"  alt = "geometry" width="250px">
         <div class = "cardInfo">
         <h2>Geometry</h2>
@@ -26,7 +26,7 @@
     </Div>
 
     <Div class = "card">
-        <a href="Choose Quiz.html">
+        <a href="Choose Quiz.php">
         <img src="../images/Arithmetic.jpg" alt = "Arithmetic" width="250px">
         <div class = "cardInfo">
         <h2>Arithmetic</h2>
@@ -35,7 +35,7 @@
     </Div>
 
     <Div class = "card">
-        <a href="Choose Quiz.html">
+        <a href="Choose Quiz.php">
         <img src="../images/Circle_Theorem.jpg" alt = "Circle Theorem" width="250px">
         <div class = "cardInfo">
         <h2>Circle Theorem</h2>
@@ -44,7 +44,7 @@
     </Div>
 
     <Div class = "card">
-        <a href="Choose Quiz.html">
+        <a href="Choose Quiz.php">
         <img src="../images/algebra.jpg" alt = "algebra" width="250px">
         <div class = "cardInfo">
         <h2>Algebra</h2>

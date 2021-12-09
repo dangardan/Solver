@@ -15,7 +15,7 @@
         <h1>Choose Quiz</h1>
         <table>
             <tr>
-                <a href="Quiz.html">
+                <a href="Quiz.php">
                 <th>Number</th>
                 <th>Name</th>
                 <th>No. of Questions</th>
@@ -23,12 +23,12 @@
                 </a>
             </tr>
             <tr>
-                <a href="Quiz.html">
+                <a href="Quiz.php">
                 <td>1</td>
                 <td>Geometry</td>
                 <td>4</td>
                 <td>30 mins</td>
-                <td><button><a href="Quiz.html">Select</a></button></td>
+                <td><button><a href="Quiz.php">Select</a></button></td>
 
             </a>
 
@@ -38,21 +38,21 @@
                 <td>Algebra</td>
                 <td>3</td>
                 <td>30 mins</td>
-                <td><button><a href="Quiz.html">Select</a></button></td>
+                <td><button><a href="Quiz.php">Select</a></button></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Cirlce Theorem</td>
                 <td>3</td>
                 <td>30 mins</td>
-                <td><button><a href="Quiz.html">Select</a></button></td>
+                <td><button><a href="Quiz.php">Select</a></button></td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Arithmetic</td>
                 <td>3</td>
                 <td>30 mins</td>
-                <td><button><a href="Quiz.html">Select</a></button></td>
+                <td><button><a href="Quiz.php">Select</a></button></td>
             </tr>
         </table>
     </div>
