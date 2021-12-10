@@ -1,8 +1,8 @@
 <?php
 
-$serverName="localhost";
-$userName = "dangar";
-$pwd = "123leinad";
+$serverName="localhost:3307";
+$userName = "root";
+$pwd = "";
 $dbName="solver";
 
 $conn = mysqli_connect($serverName,$userName,$pwd,$dbName);

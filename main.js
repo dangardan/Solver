@@ -1,5 +1,6 @@
 $(document).ready(() => {
 
+
     // Sign UP jquery
     $("#signupbutton").on('click', function(e) {
         e.preventDefault();
@@ -43,6 +44,8 @@ $(document).ready(() => {
                         }
                     }
                 });
+            } else {
+                alert("Please fill all field");
             }
 
 
@@ -135,6 +138,27 @@ $(document).ready(() => {
                 }
             }
         });
+
+
+
+    });
+
+    $(".tchat").on('click', function(e) {
+        $(".tchatbox").fadeIn();
+    });
+
+    $(".pageholder").on('click', function(e) {
+        $(".tchatbox").hide();
+    });
+
+    $("#SignupButton").on('click', function(e) {
+        window.location.href = "../views/SignUp.php";
+    })
+
+    $("#sendbutton").on('click', function(e) {
+        var message = $(".textmessage").val();
+        var formatofmessage = `<div class= "design"> <p> ${message} </p></div>`
+        $(".ttextarea").append(formatofmessage);
     });
 
 });

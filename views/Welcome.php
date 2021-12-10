@@ -1,5 +1,8 @@
 <?php include'../layout/loginheader.php';?>
+
 <body class = "WelcomeInfo">
+ 
+<div class="pageholder">
 <div class = "LevelBar">
     <div class = "userPic">
     <img src="../images/user.png" alt="user image" width = "20px">
@@ -17,7 +20,26 @@
        <button class= "textbox" id="logoutbutton">Log Out</button> <br><br>
      </div>
 
-     <button id = "chatBox">Chat</button>
+</div>
+     <div class="tchat">
+
+<p>Chat</p>
+ <i class="fas fa-comments" id="messagefont"></i>
+</div>
+ <div class="tchatbox">
+    <div class="ttextarea">
+    <div class= "design"> <p> ${message} </p></div>
+    </div>
+    <div class="tinputarea">
+        <input class="textmessage" type="text">
+        <i class="fas fa-arrow-circle-right" id="sendbutton"></i>
+    </div>
+ 
+ </div>
+     <!-- <button id = "chatBox">Chat</button> -->
+   
      <?php include '../layout/footer.php'; ?>
-</body>
+
+    
+    </body>
 </html>

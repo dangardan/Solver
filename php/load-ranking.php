@@ -4,6 +4,11 @@ include 'db.php';
 $sql = "SELECT * FROM `ranking` ORDER BY `experience` DESC LIMIT 10";
 $counter = 1;
 $result= mysqli_query($conn,$sql);
+echo"<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Experience</th>
+</tr>";
 if(mysqli_num_rows($result))
     {
         while($row = mysqli_fetch_assoc($result))
@@ -30,7 +35,7 @@ if(mysqli_num_rows($result))
             $counter++;
         }
     }else{
-        echo "there is no comments";
+        echo "there is no rank";
     }
 
 mysqli_close($conn);

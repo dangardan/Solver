@@ -1,6 +1,6 @@
 <?php
 include 'db.php';
-session_start();
+// session_start();
 $ID=$_SESSION['user_id'];
 $sql="SELECT * FROM `taknquiz` WHERE user_id='$ID'";
 $result= mysqli_query($conn,$sql);

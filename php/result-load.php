@@ -1,6 +1,6 @@
 <?php
 include 'db.php';
-session_start();
+// session_start();
 if(isset($_GET['id'])){
     //do something if $_GET is set
     $_SESSION['last_id']=$_GET['id'];
