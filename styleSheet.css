@@ -1,11 +1,16 @@
 /* James Faber, Hector Castellanos, Daniel Garcia */
 
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body {
     background-color: aliceblue;
     padding: 0px;
     margin: 0px;
     animation: transitionIn 2s;
     position: relative;
+    font-family: cursive;
 }
 
 @keyframes transitionIn {
@@ -34,7 +39,7 @@ body {
     background-color: rgb(255, 181, 181);
     margin: auto;
     width: 300px;
-    height: 455px;
+    height: 500px;
     padding: 10px;
     text-align: center;
     margin-top: 150px;
@@ -50,6 +55,15 @@ body {
     margin-top: 20px;
 }
 
+#textbox:hover {
+    background-color: #9ff4ff;
+}
+
+#textbox:active {
+    background-color: #9ff4ff;
+    transform: translateY(1px);
+}
+
 #loginButton {
     border-radius: 30px;
     width: 200px;
@@ -58,12 +72,30 @@ body {
     margin-top: 20px;
 }
 
+#loginButton:hover {
+    background-color: #26b4be;
+}
+
+#loginButton:active {
+    background-color: #26b4be;
+    transform: translateY(1px);
+}
+
 #SignupButton {
     border-radius: 30px;
     width: 200px;
     height: 40px;
     background-color: rgb(253, 255, 136);
     margin-top: 20px;
+}
+
+#SignupButton:hover {
+    background-color: #d3e012;
+}
+
+#SignupButton:active {
+    background-color: #d3e012;
+    transform: translateY(1px);
 }
 
 
@@ -99,10 +131,15 @@ body {
     background-size: 120% 120%;
 }
 
+span {
+    margin-left: 10px;
+}
+
 .WelcomePage {
     margin: auto;
+    margin-top: -10%;
     width: 300px;
-    height: 350px;
+    height: 80%;
     padding: 10px;
     text-align: center;
     border-radius: 30px;
@@ -128,7 +165,7 @@ body {
 .tchatbox {
     background-color: #EFEFEF;
     position: absolute;
-    height: 100%;
+    height: 90vh;
     top: -10;
     right: 0;
     width: 200px;
@@ -181,7 +218,7 @@ body {
 }
 
 .SolverTable table {
-    width: 400px;
+    width: 500px;
     margin: auto;
     border: solid;
 }
@@ -219,6 +256,13 @@ td {
 
 /* Select Topic Page */
 
+.solverCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    margin: auto;
+}
+
 .card {
     background-color: antiquewhite;
     width: 250px;
@@ -229,8 +273,19 @@ td {
     box-shadow: 5px 5px 5px gray;
     border-radius: 25px;
     border: 1px solid black;
-    /* display: grid; 
-     grid-template-columns: 20% 20% 20% 20%; */
+}
+
+.card:hover {
+    animation: effect 1s;
+}
+
+@keyframes effect {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 
 .card img {
@@ -332,16 +387,278 @@ td {
 }
 
 
-/* .resultExplanation
-{
-    
+/* Alert  */
+
+#customAlert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(202, 198, 192, 0.75);
 }
 
-.resultLink
-{
+#box {
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 440px;
+    height: 150px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 2px 2px 8px black;
+    background-color: blanchedalmond;
 }
 
-.resultGrid
-{
-   
-} */
+.heading {
+    background-color: cadetblue;
+    color: white;
+    font-size: larger;
+    padding: 5px;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+#confirmBtn {
+    height: 25px;
+    width: 80px;
+    border-radius: 8px;
+    background-color: rgb(212, 66, 29);
+    color: azure;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+#confirmBtn1 {
+    height: 25px;
+    width: 80px;
+    border-radius: 8px;
+    background-color: cadetblue;
+    color: azure;
+    cursor: pointer;
+    margin-top: -25px;
+    margin-left: 200px;
+}
+
+
+/* Results Page */
+
+.resultQuestions {
+    border: 1px solid black;
+    width: 900px;
+    margin: 20px auto;
+    background-color: honeydew;
+    padding: 0 0 10px 20px;
+}
+
+.resultQuestions button {
+    border-radius: 25px;
+    width: 70px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+    .loginPage {
+        margin-top: 100px;
+    }
+    .WelcomeInfo {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100% 100%;
+        width: fit-content;
+    }
+    .WelcomePage {
+        width: 0px;
+        margin: auto;
+    }
+    #chatBox {
+        width: 50px;
+        position: absolute;
+        left: 370px;
+        top: 300px;
+    }
+    .SolverTable {
+        width: fit-content;
+        margin-top: auto;
+    }
+    .SolverTable table {
+        width: 300px;
+        margin: auto;
+    }
+    .solverCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .QuizBackground {
+        width: 300px;
+        margin: 25px;
+    }
+    #finishButton {
+        width: 200px;
+        margin-left: 45px;
+    }
+    #box {
+        margin-top: 100px;
+        margin-left: 35px;
+        width: 300px;
+    }
+    #confirmBtn {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #confirmBtn1 {
+        margin-top: -25px;
+        margin-left: 20px;
+    }
+    .resultQuestions {
+        width: 300px;
+        margin-left: 20px;
+        background-color: honeydew;
+        padding: 0 20px 10px 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .loginPage {
+        margin: auto;
+        width: 450px;
+        height: 555px;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    .WelcomeInfo {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100% 100%;
+        width: 500px;
+    }
+    .WelcomePage {
+        height: 500px;
+        margin: 100px 0 0 200px;
+    }
+    #chatBox {
+        width: 50px;
+        position: absolute;
+        left: 720px;
+        top: 300px;
+    }
+    .SolverTable {
+        width: fit-content;
+        margin-top: auto;
+    }
+    .SolverTable table {
+        width: 600px;
+        margin: auto;
+    }
+    .solverCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: fit-content;
+        margin: 20px 0 0 100px;
+    }
+    .QuizBackground {
+        width: 700px;
+        margin: 25px;
+    }
+    #finishButton {
+        width: 200px;
+        margin-left: 250px;
+    }
+    #box {
+        margin-top: 100px;
+        margin-left: 150px;
+        width: 500px;
+    }
+    .resultQuestions {
+        width: 700px;
+        margin: 10px;
+        background-color: honeydew;
+        padding: 0 20px 10px 20px;
+    }
+}
+
+#quizbutton {
+    color: white;
+    background-color: #72B7F2;
+    border: none;
+}
+
+#quizbutton:hover,
+#leaderboardbutton:hover,
+#historybutton:hover,
+#logoutButton:hover {
+    -webkit-box-shadow: -10px 6px 0px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -10px 6px 0px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: -10px 6px 0px -2px rgba(0, 0, 0, 0.75);
+}
+
+#leaderboardbutton {
+    border: none;
+    background-color: #A3E5C4;
+    color: rgb(125, 121, 121);
+}
+
+#historybutton {
+    border: none;
+    background-color: #C76706;
+    color: white;
+}
+
+#logoutbutton {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.WelcomePage>h1 {
+    font-size: 5rem;
+}
+
+#backwbutton {
+    font-size: 5rem;
+    font-weight: bolder;
+    color: #FF0000;
+}
+
+#heading {
+    font-size: 5rem;
+}
+
+#heading2 {
+    font-size: 4rem;
+    margin-top: 10%;
+}
+
+.hello {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+#rankingtable table {
+    border: none;
+}
+
+#finishreview {
+    width: 450px;
+    border-radius: 50px;
+    height: 50px;
+    margin-left: 25px;
+    background-color: rgb(17, 175, 51);
+}
+
+.buttondiv {
+    width: 40%;
+    margin: auto;
+}

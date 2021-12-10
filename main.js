@@ -161,6 +161,25 @@ $(document).ready(() => {
         $(".ttextarea").append(formatofmessage);
     });
 
+    $("#quizbutton").on('click', function(e) {
+        window.location.href = "../views/Topic.php";
+    })
+
+    $("#historybutton").on('click', function(e) {
+        window.location.href = "../views/history.php";
+    })
+
+
+    $("#leaderboardbutton").on('click', function(e) {
+        window.location.href = "../views/ranking.php";
+    })
+
+    $(".card").on('click', function(e) {
+        window.location.href = "../views/Choose Quiz.php";
+    })
+    $("#confirmBtn1").on('click', function(e) {
+        window.location.href = "../views/results.php";
+    });
 });
 
 

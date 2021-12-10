@@ -113,5 +113,7 @@ if(mysqli_num_rows($result))
     }else{
         echo "there is no comments";
     }
+
+    mysqli_close($conn);
 }
 ?>

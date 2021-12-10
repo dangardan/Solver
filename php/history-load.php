@@ -12,7 +12,7 @@ if(mysqli_num_rows($result))
         {   
         echo "<tr>";
         echo "<td>".$row['quizID']."</td>";
-        echo "<td></td>";
+        echo "<td>Tesing</td>";
         echo "<td>".$row['grade']."%"."</td>";
         echo "<td>".$row['datetaken']."</td>";
         echo "<td><a href='../views/results.php?id=".$row['quizID']."'>view</a></td>";

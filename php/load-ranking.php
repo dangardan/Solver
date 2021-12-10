@@ -30,6 +30,7 @@ if(mysqli_num_rows($result))
             echo "</td>";
             echo "<td>";
             echo $row['experience'];
+            echo" Exp";
             echo "</td>";
             echo "</tr>";
             $counter++;
