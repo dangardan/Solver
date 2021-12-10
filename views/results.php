@@ -5,7 +5,7 @@
         <img src="../images/user.png" alt="user image" width = "20px">
         <p>Lvl 1</p>
         </div>
-        <h4><?php echo$_SESSION['username'] ?></h4>
+        <h4><?php echo$_SESSION['user_name'] ?></h4>
         <p>--------------</p>
     </div>
 
